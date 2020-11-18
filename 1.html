@@ -22,19 +22,53 @@ document.write( tablica[7] + "<br>");
 document.write( tablica[8] + "<br>"); 
 document.write( tablica[9] + "<br>" ); 
 document.write("<br><br>");
+
 document.write("<-----Zadanie 2----->");
 document.write("<br><br>");
 tablica.reverse();
-document.write( tablica[0] + "<br>"); 
-document.write( tablica[1] + "<br>"); 
-document.write( tablica[2] + "<br>"); 
-document.write( tablica[3] + "<br>"); 
-document.write( tablica[4] + "<br>"); 
-document.write( tablica[5] + "<br>"); 
-document.write( tablica[6] + "<br>"); 
-document.write( tablica[7] + "<br>"); 
-document.write( tablica[8] + "<br>"); 
-document.write( tablica[9] + "<br>" ); 
+let tablica2=new Array();
+let j;
+for(j=0;j<=9;j++){
+tablica2.push(tablica[j]);
+document.write(tablica2[j]); 
+document.write("<br>");
+}
+document.write("<br><br>");
+
+document.write("<-----Zadanie 3----->");
+
+document.write("<br><br>");
+
+document.write("<-----Zadanie 4----->");
+document.write("<br><br>");
+let tablica4=new Array();
+let a1=prompt("Podaj pierwszą liczbę");
+let a2=prompt("Podaj drugą liczbę");
+let a3=prompt("Podaj trzecią liczbę");
+let a4=prompt("Podaj czwartą liczbę");
+let a5=prompt("Podaj piątą liczbę");
+
+tablica4.unshift(a1);
+tablica4.unshift(a2);
+tablica4.unshift(a3);
+tablica4.unshift(a4);
+tablica4.unshift(a5);
+console.log(tablica4);
+
+document.write("<br><br>");
+
+document.write("<-----Zadanie 5----->");
+document.write("<br><br>");
+document.write("<br><br>");
+
+document.write("<-----Zadanie 6----->");
+document.write("<br><br>");
+
+
+document.write("<br><br>");
+
+document.write("<-----Zadanie 7----->");
+document.write("<br><br>");
 
     </script>
 </body>
