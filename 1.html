@@ -36,11 +36,21 @@ document.write("<br>");
 document.write("<br><br>");
 
 document.write("<-----Zadanie 3----->");
-
+document.write("<br><br>");
+let tablica3=new Array(20);
+let i;
+for(i=1;i<=20;i++){
+    if(i%3 || i%5){
+            tablica3.push(parseInt(i));
+            document.write(tablica3[i]);
+            document.write("<br>");
+    }
+}
 document.write("<br><br>");
 
 document.write("<-----Zadanie 4----->");
 document.write("<br><br>");
+document.write("Wynik zadania w konsoli");
 let tablica4=new Array();
 let a1=prompt("Podaj pierwszą liczbę");
 let a2=prompt("Podaj drugą liczbę");
@@ -59,17 +69,44 @@ document.write("<br><br>");
 
 document.write("<-----Zadanie 5----->");
 document.write("<br><br>");
+document.write("Wynik zadania w konsoli");
+let tablica5=new Array();
+
+for(m=1;m<=20;m++){
+    tablica5.push(tablica3[m]);
+}
+
+for(n=0;n<5;n++){
+    tablica5.push(tablica4[n]);
+}
+
+console.log(tablica5);
+
 document.write("<br><br>");
 
 document.write("<-----Zadanie 6----->");
 document.write("<br><br>");
+document.write("Wynik zadania w konsoli");
+let tablica6=new Array();
 
-
+for(o=0;o<25;o++){
+tablica6.push(tablica5[o]);
+}
+console.log(tablica6);
+tablica6.sort();
 document.write("<br><br>");
 
 document.write("<-----Zadanie 7----->");
 document.write("<br><br>");
+document.write("Wynik zadania w konsoli");
+let tablica7=new Array();
 
+tablica7.push(tablica6[3]);
+tablica7.push(tablica6[4]);
+tablica7.push(tablica6[5]);
+tablica7.push(tablica6[6]);
+
+console.log(tablica7);
     </script>
 </body>
 </html>
