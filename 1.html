@@ -37,13 +37,12 @@ document.write("<br><br>");
 
 document.write("<-----Zadanie 3----->");
 document.write("<br><br>");
-let tablica3=new Array(20);
+let tablica3=[];
 let i;
 for(i=1;i<=20;i++){
-    if(i%3 || i%5){
-            tablica3.push(parseInt(i));
-            document.write(tablica3[i]);
-            document.write("<br>");
+    if(i%3==0 || i%5==0){
+            tablica3[i-1]=i;
+            console.log(tablica3[i]);
     }
 }
 document.write("<br><br>");
@@ -52,18 +51,22 @@ document.write("<-----Zadanie 4----->");
 document.write("<br><br>");
 document.write("Wynik zadania w konsoli");
 let tablica4=new Array();
-let a1=prompt("Podaj pierwszą liczbę");
-let a2=prompt("Podaj drugą liczbę");
-let a3=prompt("Podaj trzecią liczbę");
-let a4=prompt("Podaj czwartą liczbę");
-let a5=prompt("Podaj piątą liczbę");
+let a1=parseInt(prompt("Podaj pierwszą liczbę"));
+let a2=parseInt(prompt("Podaj drugą liczbę"));
+let a3=parseInt(prompt("Podaj trzecią liczbę"));
+let a4=parseInt(prompt("Podaj czwartą liczbę"));
+let a5=parseInt(prompt("Podaj piątą liczbę"));
 
+if(a1!=isNaN && a2!=isNaN && a3!=isNaN && a4!=isNaN && a5!=isNaN){
 tablica4.unshift(a1);
 tablica4.unshift(a2);
 tablica4.unshift(a3);
 tablica4.unshift(a4);
 tablica4.unshift(a5);
 console.log(tablica4);
+}else{
+alert("Odśwież i podaj liczby jeszcze raz");
+}
 
 document.write("<br><br>");
 
